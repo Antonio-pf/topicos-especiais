@@ -2,7 +2,7 @@
 infoProduto = {}
 
 def setValorProduto():
-    valorDigitado = int(input("Valor do produto: "))
+    valorDigitado = float(input("Valor do produto: "))
     if valorDigitado <= 0:
         print("Digite um valor maior que zero!")
         setValorProduto()
@@ -15,8 +15,7 @@ def setInfoProduto():
     setValorProduto()
 
 def setDesconto(valorProduto):
-
-    if valorProduto <= 50 and valorProduto < 200:
+    if valorProduto >= 50 and valorProduto < 200:
         infoProduto['desconto'] = infoProduto['valor'] - 0.05 * infoProduto['valor']  
     elif valorProduto >= 200 and valorProduto < 500:
         infoProduto['desconto'] = infoProduto['valor'] - 0.06 * infoProduto['valor'] 
