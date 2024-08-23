@@ -1,5 +1,3 @@
-import string
-
 def calcularLetrasEDigitos(sequencia):
     countNums  = len([num for num in sequencia if num.isdigit()])
     countLetras = len([letra for letra in sequencia if letra.isalpha()])
