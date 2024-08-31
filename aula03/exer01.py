@@ -47,7 +47,6 @@ def print_imc(imc):
 def main():
     limpar_tela()
     print("\033[1;32mCálculo de IMC\033[0m")
-
     ler_numeros()
 
 
